@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/customTextViews"
+        android:text="@string/user_s_details"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/border"
+        android:padding="22dp"
+        android:layout_marginTop="80dp" />
+
+    <TextView
+        android:id="@+id/tvFirstName"
+        style="@style/customTextViews"
+        android:text="@string/first_name"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/tvTitle"/>
+
+    <EditText
+        android:id="@+id/etFirstName"
+        style="@style/customEditViews"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:focusable="false"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/tvTitle"/>
+
+    <TextView
+        android:id="@+id/tvLastName"
+        style="@style/customTextViews"
+        android:text="@string/last_name"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/tvFirstName"/>
+
+    <EditText
+        android:id="@+id/etLastName"
+        style="@style/customEditViews"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:focusable="false"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/tvFirstName"/>
+
+    <TextView
+        android:id="@+id/tvEmailAddress"
+        style="@style/customTextViews"
+        android:text="@string/emailaddress"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/tvLastName"/>
+
+    <EditText
+        android:id="@+id/etEmailAddress"
+        style="@style/customEditViews"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:focusable="false"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/tvLastName"/>
+
+    <TextView
+        android:id="@+id/tvNoOfSeats"
+        style="@style/customTextViews"
+        android:text="@string/no_of_seats"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/tvEmailAddress"/>
+
+    <EditText
+        android:id="@+id/etNoOfSeats"
+        style="@style/customEditViews"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/tvEmailAddress"/>
+
+    <TextView
+        android:id="@+id/tvDateOfShow"
+        style="@style/customTextViews"
+        android:text="@string/date_of_show"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/tvNoOfSeats"/>
+
+    <EditText
+        android:id="@+id/etDateOfShow"
+        style="@style/customEditViews"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="date"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/tvNoOfSeats"/>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/button"
+        android:textColor="@color/black"
+        android:padding="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"/>
+</RelativeLayout>

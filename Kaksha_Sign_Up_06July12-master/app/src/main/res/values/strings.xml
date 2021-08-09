@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Kaksha</string>
+    <string name="continue_wih_google">Continue wih google</string>
+    <string name="continue_wih_facebook">Continue wih facebook</string>
+    <string name="or">or</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="use_phone_number">USE PHONE NUMBER</string>
+    <string name="password_minimum_and_characters">Password (minimum and characters)</string>
+    <string name="jane_cooper">Jane Cooper</string>
+    <string name="almajawason_example_com">almajawason@example.com</string>
+    <string name="create_account">Create Account</string>
+</resources>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/customTextView"
+                android:text="1"/>
+
+            <TextView
+                style="@style/customTextView"
+                android:text="2"/>
+
+            <TextView
+                style="@style/customTextView"
+                android:text="3" />
+
+            <TextView
+                style="@style/customTextView"
+                android:text="4"/>
+
+            <TextView
+                style="@style/TextViewGreenBackground"
+                android:text="5"/>
+
+            <TextView
+                style="@style/customTextView"
+                android:text="6"/>
+
+            <TextView
+                style="@style/customTextView"
+                android:text="7"/>
+
+            <TextView
+                style="@style/customTextView"
+                android:text="8"/>
+
+            <TextView
+                style="@style/customTextView"
+                android:text="9"/>
+
+            <TextView
+                style="@style/customTextView"
+                android:text="10"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/customTextView"
+                android:text="11"/>
+
+            <TextView
+                style="@style/TextViewGreenBackground"
+                android:text="12"/>
+
+            <TextView
+                style="@style/customTextView"
+                android:text="13" />
+
+            <TextView
+                style="@style/customTextView"
+                android:text="14"/>
+
+            <TextView
+                style="@style/customTextView"
+                android:text="15"/>
+
+            <TextView
+                style="@style/customTextView"
+                android:text="16"/>
+
+            <TextView
+                style="@style/customTextView"
+                android:text="17"/>
+
+            <TextView
+                style="@style/customTextView"
+                android:text="18"/>
+
+            <TextView
+                style="@style/customTextView"
+                android:text="19"/>
+
+            <TextView
+                style="@style/customTextView"
+                android:text="20"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/customTextView"
+                android:text="21"/>
+
+            <TextView
+                style="@style/customTextView"
+                android:text="22" />
+
+            <TextView
+                style="@style/customTextView"
+                android:text="23" />
+
+            <TextView
+                style="@style/customTextView"
+                android:text="24"/>
+
+            <TextView
+                style="@style/TextViewGreenBackground"
+                android:text="25"/>
+
+            <TextView
+                style="@style/customTextView"
+                android:text="26"/>
+
+            <TextView
+                style="@style/customTextView"
+                android:text="27"/>
+
+            <TextView
+                style="@style/customTextView"
+                android:text="28"/>
+
+            <TextView
+                style="@style/customTextView"
+                android:text="29"/>
+
+            <TextView
+                style="@style/customTextView"
+                android:text="30"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+</RelativeLayout>

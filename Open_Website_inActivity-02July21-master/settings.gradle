@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Open Website inActivity 02July21"

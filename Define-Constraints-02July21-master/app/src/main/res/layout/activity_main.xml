@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:background="@color/primary"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivBackBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back_btn_white"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toTopOf="@id/header"
+        app:layout_constraintStart_toStartOf="@id/header" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What topic do you love?"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toBottomOf="@id/ivBackBtn"
+        app:layout_constraintStart_toStartOf="@id/header" />
+
+    <Button
+        android:id="@+id/btnBooks"
+        style="@style/customBtn"
+        android:text="Books"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        style="@style/customView"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@id/btnBooks"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnPodcasts"
+        style="@style/customBtn"
+        android:text="Podcasts"
+        android:layout_marginRight="20dp"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        style="@style/customView"
+        android:layout_marginRight="20dp"
+        app:layout_constraintTop_toBottomOf="@id/btnPodcasts"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnNews"
+        style="@style/customBtn"
+        android:text="News"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@id/btnBooks"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        style="@style/customView"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@id/btnNews"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnBusiness"
+        style="@style/customBtn"
+        android:text="Business"
+        android:layout_marginRight="20dp"
+        app:layout_constraintTop_toBottomOf="@id/btnPodcasts"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        style="@style/customView"
+        android:layout_marginRight="20dp"
+        app:layout_constraintTop_toBottomOf="@id/btnBusiness"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnEntertainment"
+        style="@style/customBtn"
+        android:text="Entertainment"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@id/btnNews"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        style="@style/customView"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@id/btnEntertainment"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnSports"
+        style="@style/customBtn"
+        android:text="Sports"
+        android:layout_marginRight="20dp"
+        app:layout_constraintTop_toBottomOf="@id/btnBusiness"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        style="@style/customView"
+        android:layout_marginRight="20dp"
+        app:layout_constraintTop_toBottomOf="@id/btnSports"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnTechnology"
+        style="@style/customBtn"
+        android:text="Technology"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@id/btnEntertainment"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        style="@style/customView"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@id/btnTechnology"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnPronunciation"
+        style="@style/customBtn"
+        android:text="Pronunciation"
+        android:layout_marginRight="20dp"
+        app:layout_constraintTop_toBottomOf="@id/btnSports"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        style="@style/customView"
+        android:layout_marginRight="20dp"
+        app:layout_constraintTop_toBottomOf="@id/btnPronunciation"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/footer"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:background="@color/primary"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:textColor="@color/primary"
+        android:textSize="20sp"
+        android:paddingHorizontal="80dp"
+        android:paddingVertical="14dp"
+        android:background="@drawable/continue_btn"
+        app:layout_constraintTop_toTopOf="@id/footer"
+        app:layout_constraintBottom_toBottomOf="@id/footer"
+        app:layout_constraintStart_toStartOf="@id/footer"
+        app:layout_constraintEnd_toEndOf="@id/footer" />
+</androidx.constraintlayout.widget.ConstraintLayout>

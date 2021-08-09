@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Resources You Part 01July21</string>
+    <string name="email_description">(This is also used as login for CakeHR)</string>
+    <string name="email_Id">jonathan@gmail.com</string>
+    <string name="email">Work Email:</string>
+    <string name="last_name_hint">Doe</string>
+    <string name="last_name">Last Name:</string>
+    <string name="first_name_hint">Jonathan</string>
+    <string name="first_name">First Name:</string>
+    <string name="title_hint">Title</string>
+    <string name="title">Title</string>
+    <string name="main_title">Add New Employee</string>
+    <string name="image_description">person</string>
+</resources>

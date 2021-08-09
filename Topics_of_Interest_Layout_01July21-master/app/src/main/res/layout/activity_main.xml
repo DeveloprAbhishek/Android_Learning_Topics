@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="8"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:background="@color/primary"
+        android:layout_weight="1"
+        android:padding="26dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_back"
+            android:drawablePadding="40dp"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:text="@string/titile" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_weight="6"
+        android:padding="32dp">
+
+        <Button
+            android:id="@+id/btnBooks"
+            style="@style/blueButton"
+            app:backgroundTint="@color/primary"
+            android:text="@string/books"/>
+
+        <View
+            android:id="@+id/underlineBooks"
+            android:layout_width="150dp"
+            android:layout_height="4dp"
+            android:layout_below="@id/btnBooks"
+            android:background="@drawable/line"/>
+        <Button
+            android:id="@+id/btnPodcast"
+            style="@style/whiteButton"
+            app:backgroundTint="@color/white"
+            android:text="@string/podcasts"
+            android:layout_alignParentRight="true"/>
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="4dp"
+            android:layout_below="@id/btnBooks"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/line"/>
+
+        <Button
+            android:id="@+id/btnNews"
+            style="@style/whiteButton"
+            app:backgroundTint="@color/white"
+            android:layout_below="@id/underlineBooks"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="@string/news"/>
+
+        <View
+            android:id="@+id/underlineNews"
+            android:layout_width="150dp"
+            android:layout_height="4dp"
+            android:layout_below="@id/btnNews"
+            android:background="@drawable/line"/>
+        <Button
+            android:id="@+id/btnbusiness"
+            style="@style/whiteButton"
+            app:backgroundTint="@color/white"
+            android:text="@string/business"
+            android:layout_below="@id/underlineBooks"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_alignParentRight="true"/>
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="4dp"
+            android:layout_below="@id/btnbusiness"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/line"/>
+
+        <Button
+            android:id="@+id/btnEntertainment"
+            style="@style/whiteButton"
+            app:backgroundTint="@color/white"
+            android:layout_below="@id/underlineNews"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="@string/entertainment"/>
+
+        <View
+            android:id="@+id/underlineEntertainment"
+            android:layout_width="150dp"
+            android:layout_height="4dp"
+            android:layout_below="@id/btnEntertainment"
+            android:background="@drawable/line"/>
+        <Button
+            android:id="@+id/btnSports"
+            style="@style/blueButton"
+            app:backgroundTint="@color/primary"
+            android:text="@string/sports"
+            android:layout_below="@id/underlineNews"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_alignParentRight="true"/>
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="4dp"
+            android:layout_below="@id/btnSports"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/line"/>
+
+        <Button
+            android:id="@+id/btnTechnology"
+            style="@style/blueButton"
+            app:backgroundTint="@color/primary"
+            android:layout_below="@id/underlineEntertainment"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="@string/technology"/>
+
+        <View
+            android:id="@+id/underlineTech"
+            android:layout_width="150dp"
+            android:layout_height="4dp"
+            android:layout_below="@id/btnTechnology"
+            android:background="@drawable/line"/>
+        <Button
+            android:id="@+id/btnPronunciation"
+            style="@style/whiteButton"
+            app:backgroundTint="@color/white"
+            android:text="@string/pronunciation"
+            android:layout_below="@id/underlineEntertainment"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_alignParentRight="true"/>
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="4dp"
+            android:layout_below="@id/btnTechnology"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/line"/>
+
+        <Button
+            android:id="@+id/btnGrammar"
+            style="@style/whiteButton"
+            app:backgroundTint="@color/white"
+            android:layout_below="@id/underlineTech"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="@string/grammar"/>
+
+        <View
+            android:id="@+id/underlineGrammar"
+            android:layout_width="150dp"
+            android:layout_height="4dp"
+            android:layout_below="@id/btnGrammar"
+            android:background="@drawable/line"/>
+        <Button
+            android:id="@+id/btnHealth"
+            style="@style/whiteButton"
+            app:backgroundTint="@color/white"
+            android:text="@string/health"
+            android:layout_below="@id/underlineTech"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_alignParentRight="true"/>
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="4dp"
+            android:layout_below="@id/btnGrammar"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/line"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:background="@color/primary"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/button_border"
+            android:backgroundTint="@color/white"
+            android:paddingHorizontal="46dp"
+            android:text="@string/button"
+            android:textColor="@color/primary"
+            android:textSize="20sp"
+            app:backgroundTint="@color/white" />
+    </RelativeLayout>
+
+</LinearLayout>

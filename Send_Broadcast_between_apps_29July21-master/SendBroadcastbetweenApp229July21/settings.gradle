@@ -1,0 +1,2 @@
+rootProject.name = "Send Broadcast between App2 29July21"
+include ':app'

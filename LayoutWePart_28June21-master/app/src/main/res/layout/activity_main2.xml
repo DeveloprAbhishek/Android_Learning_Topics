@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2F2F2F">
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#00ff00"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvHello"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Welcome to Layouts"
+        android:textColor="@color/white"
+        android:textSize="32sp" />
+
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_circle"
+        android:layout_marginLeft="10dp"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/ic_name"
+        android:text="Name:Lloyd Dcosta"
+        android:textColor="#FF0000"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/tvAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvName"
+        android:layout_marginLeft="10dp"
+        android:text="Age: 50"
+        android:textColor="#FF0000"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/tvHello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Hello AND 03"
+        android:textColor="@color/white"
+        android:textSize="32sp" />
+
+    <View
+        android:id="@+id/img_circle"
+        android:layout_width="80dp"
+        android:layout_height="78dp"
+        android:layout_below="@id/tvWelcome"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="50dp"
+        android:background="@drawable/blue_circle" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="148dp"
+        android:layout_height="12dp"
+        android:layout_above="@id/btnNext"
+        android:background="#C4C4C4"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentRight="true" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="166dp"
+        android:layout_height="20dp"
+        android:layout_above="@id/view1"
+        android:background="#C4C4C4"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="43dp"
+        android:layout_alignParentRight="true" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="183dp"
+        android:layout_height="31dp"
+        android:layout_above="@id/view2"
+        android:background="#C4C4C4"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="27dp"
+        android:layout_alignParentRight="true" />
+
+
+</RelativeLayout>

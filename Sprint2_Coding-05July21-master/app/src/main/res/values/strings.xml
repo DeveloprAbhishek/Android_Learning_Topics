@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Sprint2 Coding 05July21</string>
+    <string name="description">Masai School is a 21st century coding school that cares about you!</string>
+    <string name="titile">WELCOME</string>
+    <string name="sign_in">Sign In</string>
+    <string name="create_an_account_btn">Create an Account</string>
+</resources>

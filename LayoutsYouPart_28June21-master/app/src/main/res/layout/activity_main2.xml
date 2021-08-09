@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <Button
+        android:id="@+id/btnNrupul"
+        android:layout_width="138dp"
+        android:layout_height="70dp"
+        android:text="Nrupul"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:backgroundTint="#DE1717" />
+
+    <Button
+        android:id="@+id/btnDev"
+        android:layout_width="138dp"
+        android:layout_height="70dp"
+        android:text="Dev"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:backgroundTint="#0E0481"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:id="@+id/btnPrateek"
+        android:layout_width="138dp"
+        android:layout_height="70dp"
+        android:text="Prateek"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:backgroundTint="#B4A311"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="90dp"
+        android:layout_below="@id/btnDev"/>
+
+    <Button
+        android:id="@+id/btnAman"
+        android:layout_width="138dp"
+        android:layout_height="70dp"
+        android:text="Aman"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:backgroundTint="#920495"
+        android:layout_centerVertical="true"/>
+
+    <Button
+        android:id="@+id/btnRahul"
+        android:layout_width="138dp"
+        android:layout_height="70dp"
+        android:text="Rahul"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:backgroundTint="#3F0D66"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

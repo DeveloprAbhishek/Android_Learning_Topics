@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Event Booking</string>
+    <string name="first_name">First Name:</string>
+    <string name="emailaddress">EmailAddress:</string>
+    <string name="last_name">Last Name:</string>
+    <string name="user_s_details">Event Booking Form</string>
+    <string name="next">Next</string>
+    <string name="phone_number">Phone Number:</string>
+    <string name="confirm">Confirm</string>
+    <string name="date_of_show">Date of Show:</string>
+    <string name="no_of_seats">No. of Seats:</string>
+</resources>

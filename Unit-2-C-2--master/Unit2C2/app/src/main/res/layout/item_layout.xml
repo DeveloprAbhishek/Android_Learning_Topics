@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/itemCardView"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:backgroundTint="#EAE9E9">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvDateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date: "
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20210307"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/tvDateLabel"/>
+
+        <TextView
+            android:id="@+id/tvPositiveLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Positive: "
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/tvDateLabel"/>
+
+        <TextView
+            android:id="@+id/tvPositive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="28756489 "
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/tvDateLabel"
+            android:layout_toRightOf="@id/tvPositiveLabel"/>
+
+        <TextView
+            android:id="@+id/tvNegativeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Negative: "
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/tvPositiveLabel"/>
+
+        <TextView
+            android:id="@+id/tvNegative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="28756489"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/tvPositiveLabel"
+            android:layout_toRightOf="@id/tvNegativeLabel"/>
+
+        <TextView
+            android:id="@+id/tvHospitalizedCurrentlyLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HospitalizedCurrently: "
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/tvNegativeLabel"/>
+
+        <TextView
+            android:id="@+id/tvHospitalizedCurrently"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="40199"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/tvNegativeLabel"
+            android:layout_toRightOf="@id/tvHospitalizedCurrentlyLabel"/>
+
+        <TextView
+            android:id="@+id/tvOnVentilatorCurrentlyLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OnVentilatorCurrently: "
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/tvHospitalizedCurrentlyLabel"/>
+
+        <TextView
+            android:id="@+id/tvOnVentilatorCurrently"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="40199"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/tvHospitalizedCurrentlyLabel"
+            android:layout_toRightOf="@id/tvOnVentilatorCurrentlyLabel"/>
+
+        <TextView
+            android:id="@+id/tvDeathLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Death: "
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/tvOnVentilatorCurrentlyLabel"/>
+
+        <TextView
+            android:id="@+id/tvOnDeath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="40199"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/tvOnVentilatorCurrentlyLabel"
+            android:layout_toRightOf="@id/tvDateLabel"/>
+
+        <TextView
+            android:id="@+id/tvDateCheckedLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DateChecked : "
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/tvDeathLabel"/>
+
+        <TextView
+            android:id="@+id/tvDateChecked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="40199"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/tvDeathLabel"
+            android:layout_toRightOf="@id/tvDateCheckedLabel"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

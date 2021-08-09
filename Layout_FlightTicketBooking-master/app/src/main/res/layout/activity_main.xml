@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#551947"
+        android:padding="16dp"
+        android:layout_height="0dp"
+        android:layout_weight="1.9">
+        <TextView
+            android:id="@+id/tvFly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fly to Seoul!"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:drawablePadding="30dp"
+            android:drawableLeft="@drawable/ic_back" />
+
+        <EditText
+            android:id="@+id/etAdult"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:drawableLeft="@drawable/ic_admin"
+            android:textColor="@color/white"
+            android:drawablePadding="20dp"
+            android:backgroundTint="@color/white"
+            android:text="1 Adult, Economy"/>
+
+        <EditText
+            android:id="@+id/etLocation"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:drawableLeft="@drawable/ic_location"
+            android:textColor="@color/white"
+            android:drawablePadding="20dp"
+            android:backgroundTint="@color/white"
+            android:text="Seoul, Korea"/>
+
+        <EditText
+            android:id="@+id/etFlite"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:drawableLeft="@drawable/ic_flight"
+            android:textColor="@color/white"
+            android:drawablePadding="20dp"
+            android:backgroundTint="@color/white"
+            android:text="Choose Destination"/>
+
+        <EditText
+            android:id="@+id/etCalender"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:drawableLeft="@drawable/ic_calendar"
+            android:textColor="@color/white"
+            android:drawablePadding="20dp"
+            android:backgroundTint="@color/white"
+            android:text="Select Dates"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.1"
+        android:padding="16dp">
+        <TextView
+            android:id="@+id/tvDestination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Explore flights by destination"
+            android:textColor="#C2C2C2"/>
+
+
+        <ImageView
+            android:id="@+id/imgVally"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/khumbu_valley"
+            android:layout_below="@id/tvDestination"/>
+
+        <TextView
+            android:id="@+id/tvVallyNepal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:text="Khumbu Valley, Nepal"
+            android:layout_below="@id/tvDestination"
+            android:layout_toRightOf="@id/imgVally"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/tvVallyNonStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#c2c2c2"
+            android:textSize="10sp"
+            android:text="NonStop - 5h 16m+"
+            android:layout_below="@id/tvVallyNepal"
+            android:layout_toRightOf="@id/imgVally"
+            android:layout_marginLeft="15dp"/>
+
+
+        <View
+            android:id="@+id/vLine"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#c2c2c2"
+            android:layout_below="@id/imgVally"
+            android:layout_marginTop="18dp"/>
+
+        <ImageView
+            android:id="@+id/imgMaldives"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/maldives"
+            android:layout_below="@id/vLine"/>
+
+        <TextView
+            android:id="@+id/tvMaldives"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:text="Khumbu Valley, Nepal"
+            android:layout_below="@id/vLine"
+            android:layout_toRightOf="@id/imgVally"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/tvMaldivesNonStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#c2c2c2"
+            android:textSize="10sp"
+            android:text="NonStop - 5h 16m+"
+            android:layout_below="@id/tvMaldives"
+            android:layout_toRightOf="@id/imgVally"
+            android:layout_marginLeft="15dp"/>
+    </RelativeLayout>
+</LinearLayout>

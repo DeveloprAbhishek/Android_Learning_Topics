@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeLayout"
+    tools:context=".MainActivity2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tvNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fuchsia rose"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:layout_toRightOf="@id/tvNameLabel"/>
+
+        <TextView
+            android:id="@+id/tvYearLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year:"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_below="@id/tvNameLabel"/>
+        <TextView
+            android:id="@+id/tvYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2001"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:layout_toRightOf="@id/tvYearLabel"
+            android:layout_below="@id/tvNameLabel"/>
+
+        <TextView
+            android:id="@+id/tvPantoneValueLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pantone Value:"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_below="@id/tvYearLabel"/>
+        <TextView
+            android:id="@+id/tvPantoneValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17-2031"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:layout_toRightOf="@id/tvPantoneValueLabel"
+            android:layout_below="@id/tvYearLabel"/>
+    </RelativeLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+</RelativeLayout>

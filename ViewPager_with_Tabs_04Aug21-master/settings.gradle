@@ -1,0 +1,2 @@
+rootProject.name = "ViewPager with Tabs 04Aug21"
+include ':app'

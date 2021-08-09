@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Resources We Part-01July21</string>
+    <string name="enter_your_name_hint">Enter Your Name</string>
+    <string name="enter_your_id_hint">Enter Your Id</string>
+    <string name="enter_your_dob_hint">Enter Your DOB</string>
+    <string name="enter_your_blood_group">Enter Your Blood Group</string>
+    <string name="enter_your_phone_number">Enter Your Phone Number</string>
+    <string name="enter_your_state">Enter Your State</string>
+    <string name="enter_district">Enter District</string>
+    <string name="enter_address">Enter Address</string>
+</resources>

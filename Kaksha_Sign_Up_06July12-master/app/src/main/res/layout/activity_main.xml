@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_back"
+            android:drawablePadding="40dp"
+            android:text="@string/create_account"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dp_20"
+        android:padding="30dp">
+
+        <EditText
+            style="@style/customEditText"
+            android:backgroundTint="@color/black"
+            android:hint="@string/almajawason_example_com" />
+
+        <EditText
+            style="@style/customEditText"
+            android:backgroundTint="@color/black"
+            android:hint="@string/jane_cooper" />
+
+        <EditText
+            style="@style/customEditText"
+            android:backgroundTint="@color/black"
+            android:hint="@string/password_minimum_and_characters" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="@string/use_phone_number" />
+
+        <Button
+            style="@style/customButton"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/sign_up_button_structure"
+            android:text="@string/sign_up"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:backgroundTint="@color/primary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="@string/or" />
+
+        <Button
+            style="@style/customButton"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/sign_up_button_structure"
+            android:backgroundTint="@color/primary"
+            android:drawableLeft="@drawable/ic_facebook"
+            android:text="@string/continue_wih_facebook"
+            android:textSize="18sp"
+            app:backgroundTint="@color/facebookButtonBackground" />
+
+        <Button
+            style="@style/customButton"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/sign_up_button_structure"
+            android:drawableLeft="@drawable/ic_google"
+            android:text="@string/continue_wih_google"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:backgroundTint="@color/white" />
+    </LinearLayout>
+</LinearLayout>

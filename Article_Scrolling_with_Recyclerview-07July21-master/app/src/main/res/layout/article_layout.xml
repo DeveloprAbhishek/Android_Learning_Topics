@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ivArticleImage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/image1"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/tvArticleAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/cinzel_decorative"
+        android:text="FEATURED"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvArticleTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="30dp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/title1"
+        android:textColor="@color/black"
+        android:textSize="45sp" />
+
+    <TextView
+        android:id="@+id/tvArticleDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="35dp"
+        android:fontFamily="casual"
+        android:text="@string/description"
+        android:textSize="22sp" />
+</LinearLayout>

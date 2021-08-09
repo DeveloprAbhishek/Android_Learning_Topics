@@ -1,0 +1,2 @@
+rootProject.name = "Analyse the fragment transaction methods 02Aug21"
+include ':app'

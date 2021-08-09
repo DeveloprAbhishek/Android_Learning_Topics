@@ -1,0 +1,2 @@
+rootProject.name = "ViewPager with circle Indicater 04Aug21"
+include ':app'

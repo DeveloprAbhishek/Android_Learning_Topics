@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="customEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/edit_text_border</item>
+        <item name="android:padding">@dimen/padding_20dp</item>
+        <item name="android:layout_marginTop">@dimen/padding_30dp</item>
+        <item name="android:inputType">text</item>
+        <item name="android:autofillHints" tools:targetApi="o">no</item>
+    </style>
+</resources>

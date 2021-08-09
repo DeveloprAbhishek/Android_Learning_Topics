@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Schedule Meeting UI 01July21</string>
+    <string name="title">Schedule Meeting</string>
+    <string name="name">Name</string>
+    <string name="nrupul">Nrupul</string>
+    <string name="time">11:30am</string>
+    <string name="people_to_invite">People to invite</string>
+    <string name="prateek">Prateek</string>
+    <string name="prateek_sukhla">Prateek Sukhla</string>
+    <string name="jeff_bezos">Jeff Bezos</string>
+    <string name="notify_people_on_slack">Notify people on Slack?</string>
+    <string name="create_meeting">Create Meeting</string>
+</resources>

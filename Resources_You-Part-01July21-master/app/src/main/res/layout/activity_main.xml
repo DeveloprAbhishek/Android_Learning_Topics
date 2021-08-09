@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_blur"
+    android:paddingHorizontal="@dimen/dp_25"
+    android:paddingVertical="@dimen/dp_35"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_40"
+            android:src="@drawable/ic_baseline_person_24"
+            android:contentDescription="@string/image_description" />
+
+        <TextView
+            android:id="@+id/addNewEmployee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/sp_22"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="@string/main_title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_20">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/dp_12"
+                android:background="@drawable/black_border">
+
+                <TextView
+                    style="@style/customTextView"
+                    android:id="@+id/tvTitle"
+                    android:text="@string/title"/>
+
+                <EditText
+                    style="@style/customEditText"
+                    android:id="@+id/etSelectOption"
+                    android:hint="@string/title_hint"/>
+
+                <TextView
+                    style="@style/customTextView"
+                    android:id="@+id/tvFirstName"
+                    android:text="@string/first_name"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:layout_below="@id/tvTitle"/>
+
+                <EditText
+                    style="@style/customEditText"
+                    android:id="@+id/etFirstName"
+                    android:hint="@string/first_name_hint"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:layout_below="@id/tvTitle"/>
+
+                <TextView
+                    style="@style/customTextView"
+                    android:id="@+id/tvLastName"
+                    android:text="@string/last_name"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:layout_below="@id/tvFirstName"/>
+
+                <EditText
+                    style="@style/customEditText"
+                    android:id="@+id/etLastName"
+                    android:hint="@string/last_name_hint"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:layout_below="@id/tvFirstName"/>
+
+                <TextView
+                    style="@style/customTextView"
+                    android:id="@+id/tvEmail"
+                    android:text="@string/email"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:layout_below="@id/tvLastName"/>
+
+                <EditText
+                    style="@style/customEditText"
+                    android:id="@+id/etEmail"
+                    android:hint="@string/email_Id"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:layout_below="@id/tvLastName"/>
+
+                <TextView
+                    android:id="@+id/tvDescriptionEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email_description"
+                    android:textSize="@dimen/sp_10"
+                    android:textColor="@color/grey"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_toRightOf="@id/tvEmail"
+                    android:layout_below="@id/etEmail"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="match_parent"
+    android:background="#3B5998"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgFacebook"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_facebook"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter username or email id"
+        android:layout_marginTop="40dp"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+        android:paddingLeft="20dp"
+        android:layout_below="@id/imgFacebook"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:layout_marginTop="5dp"
+        android:textSize="26sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+        android:paddingLeft="20dp"
+        android:layout_below="@id/etEmail"/>
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="26dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/etPassword"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/tvSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up for facebook"
+        android:textColor="@color/white"
+        android:textSize="26dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/tvForgot"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/tvForgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot password?"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"/>
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_help"
+        android:layout_toRightOf="@id/tvForgot"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="21dp"/>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Topics of Interest Layout 01July21</string>
+    <string name="titile">What Topic do you love?</string>
+    <string name="books">Books</string>
+    <string name="podcasts">Podcasts</string>
+    <string name="news">News</string>
+    <string name="business">Business</string>
+    <string name="entertainment">Entertainment</string>
+    <string name="sports">Sports</string>
+    <string name="technology">Technology</string>
+    <string name="pronunciation">Pronunciation</string>
+    <string name="grammar">Grammar</string>
+    <string name="health">Health</string>
+    <string name="button">Continue</string>
+</resources>

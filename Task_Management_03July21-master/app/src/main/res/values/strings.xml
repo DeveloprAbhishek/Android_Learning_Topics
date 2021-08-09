@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Task Management 03July21</string>
+    <string name="alreadyLogin">Already have an account? </string>
+    <string name="log_in"><u> Log in</u></string>
+    <string name="create_an_account">Create an Account</string>
+    <string name="forgot_your_password"><u>Forgot your password?</u></string>
+</resources>
