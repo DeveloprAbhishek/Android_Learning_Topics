@@ -1,0 +1,2 @@
+rootProject.name = "Services Play Music 10Aug21"
+include ':app'
