@@ -20,18 +20,19 @@ public class MainActivity extends AppCompatActivity {
     private void initViews() {
         mBtnStartMusic = findViewById(R.id.btnStartMusic);
         mBtnStopMusic = findViewById(R.id.btnStopMusic);
+        intent = new Intent(this, MusicService.class);
 
         mBtnStartMusic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startService(intent);
             }
         });
 
         mBtnStopMusic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                stopService(intent);
             }
         });
     }
