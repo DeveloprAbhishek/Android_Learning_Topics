@@ -4,6 +4,7 @@ import android.app.IntentService;
 import android.content.Intent;
 import android.content.Context;
 import android.renderscript.ScriptGroup;
+import android.util.Log;
 
 import androidx.annotation.Nullable;
 
@@ -56,13 +57,18 @@ public class DownloadFileService extends IntentService {
             FileInputStream fileInputStream = new FileInputStream(file);
             int fileData = fileInputStream.read();
             StringBuffer stringBuffer = new StringBuffer();
+
             while (fileData != -1) {
                 char ch = (char) fileData;
                 stringBuffer = stringBuffer.append(ch);
                 fileData = fileInputStream.read();
-
             }
 
+            Intent intent = new Intent("com.android.broadcast_receiver");
+            intent.putExtra("WebData", stringBuffer.toString());
+            sendBroadcast(intent);
+
+            Log.d("Abhishek", stringBuffer.toString());
         }catch (Exception e) {
 
         }
