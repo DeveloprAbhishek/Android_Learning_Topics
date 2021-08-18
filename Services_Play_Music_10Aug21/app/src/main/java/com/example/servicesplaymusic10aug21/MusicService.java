@@ -11,6 +11,7 @@ import android.os.IBinder;
 import android.view.LayoutInflater;
 import android.view.View;
 
+import androidx.constraintlayout.widget.ConstraintSet;
 import androidx.core.app.NotificationCompat;
 
 import java.util.Objects;
@@ -47,15 +48,16 @@ public class MusicService extends Service {
 
     private void showNotificationAndStartForeGround() {
         createChannel();
-
+        View view = LayoutInflater.from(this).inflate(R.layout.notification_view, , false);
         NotificationCompat.Builder notificationBuilder = null;
         notificationBuilder = new NotificationCompat.Builder(this, "CHANNEL_ID")
-                .setContentTitle("Music Playing")
+                .setContentTitle("Music Playing..")
+                .setContent()
                 .setPriority(NotificationCompat.PRIORITY_HIGH);
 
         Notification notification = null;
         notification = notificationBuilder.build();
-        startForeground(120, notification);
+        startForeground(1, notification);
     }
 
 
@@ -66,7 +68,7 @@ Create notification channel if OS version is greater than or equal to Oreo
     public void createChannel() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             NotificationChannel channel = new NotificationChannel("CHANNEL_ID", "CHANNEL_NAME", NotificationManager.IMPORTANCE_DEFAULT);
-            channel.setDescription("Call Notifications");
+            channel.setDescription("Music Notifications");
             Objects.requireNonNull(this.getSystemService(NotificationManager.class)).createNotificationChannel(channel);
         }
     }

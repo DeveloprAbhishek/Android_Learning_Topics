@@ -1,0 +1,2 @@
+rootProject.name = "Retrofit Using Kotlin (WE) 18Aug21"
+include ':app'
