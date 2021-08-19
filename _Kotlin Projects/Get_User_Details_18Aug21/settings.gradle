@@ -1,0 +1,2 @@
+rootProject.name = "Get_User_Details_18Aug21"
+include ':app'
