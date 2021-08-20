@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/eventDetailsFragment">
+    <fragment
+        android:id="@+id/eventDetailsFragment"
+        android:name="com.example.navigation_graph_you_20aug21.EventDetailsFragment"
+        android:label="fragment_event_details"
+        tools:layout="@layout/fragment_event_details" >
+        <action
+            android:id="@+id/action_eventDetailsFragment_to_timeAndDateFragment"
+            app:destination="@id/timeAndDateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/priceDetailsFragment"
+        android:name="com.example.navigation_graph_you_20aug21.PriceDetailsFragment"
+        android:label="fragment_price_details"
+        tools:layout="@layout/fragment_price_details" />
+    <fragment
+        android:id="@+id/timeAndDateFragment"
+        android:name="com.example.navigation_graph_you_20aug21.TimeAndDateFragment"
+        android:label="fragment_time_and_date"
+        tools:layout="@layout/fragment_time_and_date" >
+        <action
+            android:id="@+id/action_timeAndDateFragment_to_priceDetailsFragment"
+            app:destination="@id/priceDetailsFragment" />
+    </fragment>
+</navigation>
