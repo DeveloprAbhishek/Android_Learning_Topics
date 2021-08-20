@@ -31,7 +31,7 @@ class TimeAndDateFragment : Fragment(R.layout.fragment_time_and_date) {
 
         navController = Navigation.findNavController(view)
         btnNextPricePage.setOnClickListener {
-            var startData = etStartDate.text.toString()
+            var startDate = etStartDate.text.toString()
             var endDate = etEndDate.text.toString()
             var startTime = etStartTime.text.toString()
             var endTime = etEndTime.text.toString()
@@ -39,7 +39,7 @@ class TimeAndDateFragment : Fragment(R.layout.fragment_time_and_date) {
             var bundle = Bundle()
             bundle.putString("title", title)
             bundle.putString("description", description)
-            bundle.putString("startData", startData)
+            bundle.putString("startData", startDate)
             bundle.putString("endDate", endDate)
             bundle.putString("startTime", startTime)
             bundle.putString("endTime", endTime)
