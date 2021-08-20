@@ -1,0 +1,2 @@
+rootProject.name = "Navigation_Graph_IW_20Aug21"
+include ':app'
