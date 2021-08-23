@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:id="@+id/cardView"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BFBDBD"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+        <TextView
+            android:id="@+id/tvTrackName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Track Name"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/ivImage"/>
+
+        <TextView
+            android:id="@+id/tvArtistName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Artist Name"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/ivImage"
+            android:layout_below="@id/tvTrackName"/>
+
+        <TextView
+            android:id="@+id/tvCollectionName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Collection Name"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@id/ivImage"
+            android:layout_below="@id/tvArtistName"/>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

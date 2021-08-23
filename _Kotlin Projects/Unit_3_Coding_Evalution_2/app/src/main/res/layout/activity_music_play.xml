@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MusicPlayActivity"
+    android:background="#686363">
+
+    <TextView
+        android:id="@+id/tvCollectionName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Collection name"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/white"/>
+
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/tvTrackName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Track Name"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/tvArtistName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Artist Name"
+        android:textSize="18dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/ivPrevious"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/previous"/>
+
+        <ImageView
+            android:id="@+id/ivPlayPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/play"/>
+
+        <ImageView
+            android:id="@+id/ivNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/next"/>
+    </LinearLayout>
+</LinearLayout>
