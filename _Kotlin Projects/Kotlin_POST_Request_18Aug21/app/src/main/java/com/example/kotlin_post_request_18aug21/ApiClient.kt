@@ -1,9 +1,7 @@
 package com.example.kotlin_post_request_18aug21
 
 import retrofit2.Call
-import retrofit2.http.Body
-import retrofit2.http.GET
-import retrofit2.http.POST
+import retrofit2.http.*
 
 interface ApiClient {
     @GET("posts")
